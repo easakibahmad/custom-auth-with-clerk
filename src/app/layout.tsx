@@ -16,7 +16,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
-          <div className="flex justify-between items-center p-4">
+          <div className="flex justify-between items-center">
             <h4 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 drop-shadow-lg">
               Custom Auth
             </h4>
@@ -31,7 +31,10 @@ export default function RootLayout({
               </div>
             </SignedIn>
           </div>
-          {children}
+          <div>{children}</div>
+          <footer className="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 drop-shadow-lg">
+            developed by: sakib ahmad
+          </footer>
         </body>
       </html>
     </ClerkProvider>
